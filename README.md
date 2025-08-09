@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AT Digital Landing Page
 
-Currently, two official plugins are available:
+>A modern, responsive landing page for AT Digital, built with React, Vite, and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screenshot](./src/assets/hero.png)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive design for all devices
+- Modern UI with Tailwind CSS
+- Smooth navigation with section links
+- FAQ accordion
+- Clean, maintainable React components
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📦 Getting Started
+
+1. **Clone the repository:**
+	```bash
+	git clone https://github.com/Emalshashamindi20/ATDIGITAL.git
+	cd ATDIGITAL
+	```
+2. **Install dependencies:**
+	```bash
+	npm install
+	```
+3. **Start the development server:**
+	```bash
+	npm run dev
+	```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📁 Project Structure
+
+```
+src/
+  assets/         # Images and logos
+  components/     # React components (Navbar, Hero, Services, FAQ, Footer)
+  App.jsx         # Main app entry
+  index.css       # Tailwind and global styles
+  main.jsx        # React/Vite entry
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
+
+## 📄 License
+
+This project is licensed under the MIT License.
