@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import heroImg from "../assets/hero.png";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative w-full">
       {/* Hero Image */}
@@ -14,13 +17,13 @@ const Hero = () => {
       {/* Gradient Rectangle */}
       <div
         className="bg-gradient-to-r from-teal-400 to-sky-500 p-4 sm:p-6 md:p-8 flex flex-col justify-center w-full lg:absolute lg:w-[540px] xl:w-[622px] lg:left-[60px] lg:top-115 lg:transform lg:-translate-y-1/2 lg:rounded-none lg:shadow-lg"
-        style={{}}
       >
         <h1 className="text-white text-lg sm:text-[36px] md:text-[48px] lg:text-[36px] font-bold leading-snug">
           We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
         </h1>
         
         <button
+          onClick={() => navigate("/consultation")}
           className="mt-5 text-white font-semibold cursor-pointer"
           style={{
             width: "214px",
