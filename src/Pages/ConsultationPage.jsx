@@ -27,7 +27,7 @@ const ConsultationPage = () => {
       <Navbar />
 
       {/* Button */}
-      <div className="py-10" style={{ marginLeft: "77px" }}>
+      <div style={{ marginLeft: "77px", marginTop: "40px", marginBottom: "60px" }}>
         <button
           className="text-white font-semibold"
           style={{
@@ -44,13 +44,14 @@ const ConsultationPage = () => {
       {/* FAQ Frame */}
       <div
         style={{
-          width: "801px",
+          width: "700px",
+          height: "200px",
           marginLeft: "77px",
           borderRadius: "5px",
           border: "1px dashed #A259FF",
           padding: "20px",
-          marginBottom: "40px",
-          transition: "all 0.3s ease", // smooth height change
+          marginBottom: "100px",
+          transition: "all 0.3s ease",
         }}
         className="flex flex-col justify-start"
       >
@@ -59,7 +60,9 @@ const ConsultationPage = () => {
             key={index}
             className="cursor-pointer flex flex-col"
             onClick={() => toggleItem(index)}
-            style={{ marginBottom: index !== faqs.length - 1 ? "20px" : "0" }}
+            style={{
+              marginBottom: index !== faqs.length - 1 ? "25px" : "0",
+            }}
           >
             {/* Question Row */}
             <div className="flex justify-between items-center">
@@ -72,7 +75,10 @@ const ConsultationPage = () => {
               </h2>
               <span
                 className="text-2xl select-none"
-                style={{ color: "#4B5563" }}
+                style={{
+                  color: openIndex === index ? "#4F46E5" : "#6F6C90",
+                  fontWeight: "bold",
+                }}
               >
                 {openIndex === index ? "−" : "+"}
               </span>
@@ -80,7 +86,7 @@ const ConsultationPage = () => {
 
             {/* Answer */}
             {openIndex === index && (
-              <p className="mt-2 text-gray-500 leading-relaxed">
+              <p className="mt-4 text-gray-500 leading-7">
                 {faq.answer}
               </p>
             )}
