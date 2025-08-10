@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-32">
       {/* First service */}
-      <div className="flex flex-col md:flex-row items-center gap-50">
+  <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 lg:gap-24 xl:gap-32">
         <img
           src={rightImage}
           alt="Web Development"
@@ -29,7 +29,7 @@ const Services = () => {
       </div>
 
       {/* Second service */}
-  <div className="flex flex-col md:flex-row-reverse items-center gap-50 mt-10">
+  <div className="flex flex-col md:flex-row-reverse items-center space-x-5 gap-6 sm:gap-8 md:gap-10 lg:gap-24 xl:gap-32 mt-10">
         <img
           src={leftImage}
           alt="Digital Strategy"

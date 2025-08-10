@@ -21,10 +21,13 @@ const Hero = () => {
         </h1>
         
         <button
-          className="mt-5 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded"
+          className="mt-5 text-white font-semibold cursor-pointer"
           style={{
             width: "214px",
             height: "38px",
+            backgroundColor: "#F28D35",
+            borderRadius: "4px",
+            fontSize: "14px"
           }}
         >
           GET FREE CONSULTATION
