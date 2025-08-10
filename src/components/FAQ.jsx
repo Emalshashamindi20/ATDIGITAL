@@ -26,9 +26,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="max-w-3xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-12">
       {/* Heading */}
-      <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "#4F46E5" }}>
+      <h2 className="text-[27px] font-bold text-center mb-8" style={{ color: "#4F46E5" }}>
         Frequently asked questions
       </h2>
 
