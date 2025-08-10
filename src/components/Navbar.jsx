@@ -40,11 +40,11 @@ const Navbar = () => {
             aria-label="Close menu"
           >
             <svg className="w-[31px] h-[24px]" fill="none" stroke="#000" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M7 17L17 7M7 7l10 10" />
             </svg>
           </button>
           {/* Menu Links */}
-          <nav className="flex-1 flex flex-col pl-8 pt-12 gap-[36px]">
+          <nav className="flex-1 flex flex-col pl-12 pt-12 gap-[36px]">
             <a href="#home" className="text-black text-[14px] font-medium cursor-pointer" onClick={()=>setMenuOpen(false)}>HOME</a>
             <a href="#services" className="text-black text-[14px] font-medium cursor-pointer" onClick={()=>setMenuOpen(false)}>SERVICES</a>
             <a href="#about" className="text-black text-[14px] font-medium cursor-pointer" onClick={()=>setMenuOpen(false)}>ABOUT US</a>

@@ -14,7 +14,7 @@ const Footer = () => {
             alt="AT Digital Logo"
             className="w-[180px] sm:w-[200px] lg:w-[226px] h-auto mb-4"
           />
-          <p className="text-sm sm:text-base leading-relaxed max-w-xs">
+          <p className="text-sm sm:text-[16px] sm:text-base leading-relaxed max-w-xs">
             Your goal is our target. Not anything in between. We use online
             marketing platforms and tools to achieve a single objective — your
             business results.
