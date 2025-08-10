@@ -27,35 +27,57 @@ const FAQ = () => {
 
   return (
     <section className="max-w-3xl mx-auto px-4 py-12">
-      <h2 className="text-2xl font-bold text-center text-indigo-500 mb-8">
+      {/* Heading */}
+      <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "#4F46E5" }}>
         Frequently asked questions
       </h2>
 
       <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className={`rounded-lg p-5 ${openIndex === index ? "bg-indigo-50" : "bg-white"} cursor-pointer`}
-          >
-            {/* Question Row */}
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
+          return (
             <div
-              className="flex justify-between items-center"
+              key={index}
+              className="rounded-lg p-5 cursor-pointer mx-auto overflow-hidden transition-all duration-300"
+              style={{
+                backgroundColor: '#FAF8FF',
+                width: 846,
+                height: isOpen ? 149 : 76,
+                maxWidth: '100%',
+                boxSizing: 'border-box',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
               onClick={() => toggleFAQ(index)}
             >
-              <h3
-                className={`text-base font-semibold ${openIndex === index ? "text-indigo-500" : "text-black"}`}
-              >
-                {faq.question}
-              </h3>
-              <span className="text-2xl text-indigo-500">
-                {openIndex === index ? "−" : "+"}
-              </span>
+              {/* Question Row */}
+              <div className="flex justify-between items-center">
+                <h3
+                  className={`text-base font-semibold ${
+                    isOpen ? "text-[#4F46E5]" : "text-black"
+                  }`}
+                >
+                  {faq.question}
+                </h3>
+                <span
+                  className={`text-2xl font-medium ${
+                    isOpen ? "text-[#4F46E5]" : "text-black"
+                  }`}
+                >
+                  {isOpen ? "−" : "+"}
+                </span>
+              </div>
+
+              {/* Answer */}
+              {isOpen && (
+                <p className="mt-2 text-sm" style={{ color: "#52525B" }}>
+                  {faq.answer}
+                </p>
+              )}
             </div>
-            {openIndex === index && (
-              <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-            )}
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

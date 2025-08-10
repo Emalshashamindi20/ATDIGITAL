@@ -1,22 +1,32 @@
-
 import React from "react";
 import heroImg from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[350px] sm:h-[400px] md:h-[500px] flex items-center justify-center">
-      {/* Background image */}
+    <section className="relative w-full">
+      {/* Hero Image */}
       <img
         src={heroImg}
         alt="Laptop and plant"
-        className="w-full h-full object-cover object-center absolute top-0 left-0 z-0"
+        className="w-full h-auto object-cover"
       />
-      {/* Gradient rectangle with text */}
-      <div className="relative z-10 w-full max-w-[95vw] sm:max-w-[500px] bg-gradient-to-r from-teal-400 to-sky-500 p-4 sm:p-8 rounded-none sm:rounded shadow-lg mx-2 sm:mx-0">
-        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
+
+      {/* Gradient Rectangle */}
+      <div
+        className="bg-gradient-to-r from-teal-400 to-sky-500 p-4 sm:p-6 md:p-8 flex flex-col justify-center w-full lg:absolute lg:w-[540px] xl:w-[622px] lg:left-[60px] lg:top-130 lg:transform lg:-translate-y-1/2 lg:rounded-none lg:shadow-lg"
+        style={{}}
+      >
+        <h1 className="text-white text-lg sm:text-[36px] md:text-[48px] lg:text-[48px] font-bold leading-snug">
           We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
         </h1>
-  <button className="mt-5 bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-5 py-2 font-semibold rounded w-full sm:w-auto cursor-pointer">
+        
+        <button
+          className="mt-5 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded"
+          style={{
+            width: "214px",
+            height: "38px",
+          }}
+        >
           GET FREE CONSULTATION
         </button>
       </div>

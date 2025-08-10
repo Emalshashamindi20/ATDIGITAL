@@ -13,10 +13,10 @@ const Services = () => {
           className="w-64 md:w-72"
         />
         <div>
-          <h2 className="text-xl font-bold text-indigo-600">
+          <h2 className="font-bold text-[27px]" style={{ color: '#4F46E5' }}>
             Web &amp; Mobile App Development
           </h2>
-          <p className="mt-4 text-gray-700 text-sm leading-relaxed max-w-lg">
+          <p className="mt-4 text-[16px] leading-relaxed max-w-lg" style={{ color: '#000000' }}>
             Your web and mobile Apps are pieces of the puzzle to grow your
             business. We use frameworks which tailor content and engagement
             methods to respond to different intents shown by your potential
@@ -36,10 +36,10 @@ const Services = () => {
           className="w-64 md:w-72"
         />
         <div>
-          <h2 className="text-xl font-bold text-indigo-600">
+          <h2 className="font-bold text-[27px]" style={{ color: '#4F46E5' }}>
             Digital Strategy Consulting
           </h2>
-          <p className="mt-4 text-gray-700 text-sm leading-relaxed max-w-lg">
+          <p className="mt-4 text-[16px] leading-relaxed max-w-lg" style={{ color: '#000000' }}>
             Your digital strategy should complement the overall marketing
             strategy of the company. In online marketing, each component will
             never work in isolation and every business needs a different mix. We
