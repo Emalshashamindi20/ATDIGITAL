@@ -8,12 +8,12 @@ const Hero = () => {
       <img
         src={heroImg}
         alt="Laptop and plant"
-        className="w-full h-auto object-cover"
+        className="w-full lg:h-[636px] object-cover"
       />
 
       {/* Gradient Rectangle */}
       <div
-        className="bg-gradient-to-r from-teal-400 to-sky-500 p-4 sm:p-6 md:p-8 flex flex-col justify-center w-full lg:absolute lg:w-[540px] xl:w-[622px] lg:left-[60px] lg:top-130 lg:transform lg:-translate-y-1/2 lg:rounded-none lg:shadow-lg"
+        className="bg-gradient-to-r from-teal-400 to-sky-500 p-4 sm:p-6 md:p-8 flex flex-col justify-center w-full lg:absolute lg:w-[540px] xl:w-[622px] lg:left-[60px] lg:top-115 lg:transform lg:-translate-y-1/2 lg:rounded-none lg:shadow-lg"
         style={{}}
       >
         <h1 className="text-white text-lg sm:text-[36px] md:text-[48px] lg:text-[36px] font-bold leading-snug">
