@@ -1,14 +1,14 @@
 import React from "react";
-import Logo from "../assets/Logo.png"; // path to your logo
+import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-[#4F46E5] text-white">
       {/* Top Section */}
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-20 pt-10 pb-5 grid grid-cols-1 md:grid-cols-3 gap-8 h-auto lg:h-[266px]">
+      <div className="max-w-[1440px] mx-auto px-[60px] pt-[40px] pb-[20px] grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-y-8 md:gap-x-[128px]">
         
         {/* Left Section */}
-        <div>
+        <div className="pr-4">
           <img
             src={Logo}
             alt="AT Digital Logo"
@@ -22,9 +22,9 @@ const Footer = () => {
         </div>
 
         {/* Our Technologies */}
-        <div>
+        <div className="min-w-[180px]">
           <h3 className="font-semibold text-lg sm:text-xl mb-4">Our Technologies</h3>
-          <ul className="space-y-2 text-sm sm:text-base">
+          <ul className="space-y-[12px] text-sm sm:text-base">
             <li className="cursor-pointer">ReactJS</li>
             <li className="cursor-pointer">Gatsby</li>
             <li className="cursor-pointer">NextJS</li>
@@ -33,14 +33,12 @@ const Footer = () => {
         </div>
 
         {/* Our Services */}
-        <div>
+        <div className="min-w-[220px]">
           <h3 className="font-semibold text-lg sm:text-xl mb-4">Our Services</h3>
-          <ul className="space-y-2 text-sm sm:text-base">
+          <ul className="space-y-[12px] text-sm sm:text-base">
             <li className="cursor-pointer">Social Media Marketing</li>
             <li className="cursor-pointer">Web &amp; Mobile App Development</li>
             <li className="cursor-pointer">Data &amp; Analytics</li>
-            <li className="cursor-pointer">Google Marketing Solutions</li>
-            <li className="cursor-pointer">Search Engine Optimization</li>
           </ul>
         </div>
       </div>

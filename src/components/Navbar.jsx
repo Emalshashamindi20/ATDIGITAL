@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center space-x-7 text-white text-[14px] font-medium">
+        <ul className="hidden md:flex items-center gap-[28px] text-white text-[14px] font-medium">
           <li><a href="#services" className="hover:underline cursor-pointer">SERVICES</a></li>
           <li><a href="#about" className="hover:underline cursor-pointer">ABOUT US</a></li>
           <li><a href="#contact" className="hover:underline cursor-pointer">CONTACT US</a></li>
