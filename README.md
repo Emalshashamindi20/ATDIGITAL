@@ -3,7 +3,7 @@
 
 >A modern, responsive landing page for AT Digital, built with React, Vite, and Tailwind CSS.
 
-![screenshot](./src/assets/hero.png)
+![screenshot](./src/assets/Landing.png)
 
 ## 🚀 Features
 
