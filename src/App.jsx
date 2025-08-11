@@ -5,7 +5,8 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import ConsultationPage from "./pages/ConsultationPage";
+import ConsultationPage from "./Pages/ConsultationPage.jsx";
+
 
 
 
